@@ -69,7 +69,6 @@ div.menu{
     width: 100%;
     height: 100px;
     display: flex;
-    position: relative;
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: center;
@@ -86,7 +85,7 @@ a.pide-page,.tava-page,.sac-tava-page{
     background-color: #223243;
     color: bisque; 
     text-align: center;
-    border-radius: 10px;
+    border-radius: 50px;
     border: 8px solid #223243;
     box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.35),
     inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
