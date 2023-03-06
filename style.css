@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #223243;
+}
+/*                   nav-bar                     */
+div.navbar{
+    opacity: .7;
+    box-shadow: 5px 5px 50px;
+    background-color:#223243;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: fixed;
+    box-shadow: 0 0 50px;
+}
+div.nav-menu{
+    display: grid;
+    align-items: center;
+}
+ul.nav-ul{
+    display: grid;
+    right: 0%;
+    position: absolute;
+    grid-template-columns: auto auto auto;
+}
+ul.nav-ul li{
+    list-style: none;
+    width: 100px;
+    padding:15px 30px; 
+}
+ul.nav-ul li a.nav-a{
+    color:white;
+    background-color:#223243;
+    text-decoration: none;
+    font-family: sans-serif;
+    cursor: pointer;
+    display: flex;
+}
+
+/*                                 HOME PAGE                 */
+
+div.img img{
+    margin-top: 50px;
+    transition: 2s;
+    padding-bottom: 20px;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+div.logo{
+    color: white;
+    display: grid;
+    opacity: .5;
+    position: relative;
+    justify-items:center;
+    filter: drop-shadow(0px 0px 50px);
+    background-attachment: fixed;
+}
+div.logo img{
+    width: 400px;
+    height: 400px;
+}
+div.menu{
+    z-index: 3;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+}
+a.pide-page,.tava-page,.sac-tava-page{
+    text-decoration-line: none;
+    transition-duration: 2s;
+    height: 30px;
+    padding: 15px 10px; 
+    display: flex;
+    margin-top: 20px;
+    background-color: #223243;
+    color: bisque; 
+    text-align: center;
+    border-radius: 10px;
+    border: 8px solid #223243;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.35),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+    background-color: #223243;
+}
+a.pide-page:hover,.tava-page:hover,.sac-tava-page:hover,ul.nav-ul li a.nav-a:hover{
+    transition: .1s;   
+    color: rgb(128, 90, 136);
+}
