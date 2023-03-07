@@ -13,6 +13,7 @@ div.navbar{
     display: flex;
     position: fixed;
     box-shadow: 0 0 50px;
+    z-index: 9;
 }
 div.nav-menu{
     display: grid;
@@ -26,16 +27,30 @@ ul.nav-ul{
 }
 ul.nav-ul li{
     list-style: none;
-    width: 100px;
+    width: 100%;
     padding:15px 30px; 
 }
 ul.nav-ul li a.nav-a{
-    color:white;
+    color:#bada55;
+    display: block;
+    position: relative;
+    padding:0 20px;
+    width: 50%;
+    text-align: center;
     background-color:#223243;
     text-decoration: none;
     font-family: sans-serif;
     cursor: pointer;
-    display: flex;
+
+}
+ul.nav-ul li a.nav-a:hover{
+    background-color:rgb(26, 211, 211);
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    transition: .5s;
+    transform: scale(1.2,1.5);
+    z-index: 10;
 }
 
 /*                                 HOME PAGE                 */
@@ -49,7 +64,7 @@ div.img img{
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+   
 }
 div.logo{
     color: white;
@@ -58,7 +73,7 @@ div.logo{
     position: relative;
     justify-items:center;
     filter: drop-shadow(0px 0px 50px);
-    background-attachment: fixed;
+    
 }
 div.logo img{
     width: 400px;
@@ -70,28 +85,30 @@ div.menu{
     height: 100px;
     display: flex;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     align-items: center;
     justify-items: center;
     position: absolute;
 }
-a.pide-page,.tava-page,.sac-tava-page{
+a.pide-page,.tava-page,.sac-tava-page,.kebap-page{
     text-decoration-line: none;
+    text-decoration:underline;
+    text-transform: uppercase;
     transition-duration: 2s;
     height: 30px;
     padding: 15px 10px; 
     display: flex;
-    margin-top: 20px;
+    margin-top: 1px;
     background-color: #223243;
     color: bisque; 
-    text-align: center;
+    text-align:center;
     border-radius: 50px;
     border: 8px solid #223243;
     box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.35),
     inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
     background-color: #223243;
 }
-a.pide-page:hover,.tava-page:hover,.sac-tava-page:hover,ul.nav-ul li a.nav-a:hover{
+a.pide-page:hover,.tava-page:hover,.sac-tava-page:hover,.kebap-page:hover{
     transition: .1s;   
     color: rgb(128, 90, 136);
 }
