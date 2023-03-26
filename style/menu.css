@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #34495E ;
+}
+menu{
+    width: 80%;
+    display: grid;
+    margin: 0 auto;
+}
+tbody{
+    background-color: #314961;
+    filter: drop-shadow(0 0 15px);
+    border-radius: 15px;
+    
+}
+table{
+    padding: 20px 0;
+    width: 90%;
+    margin: 20px ;
+    display: flex;
+    border-radius: 25px;
+    justify-content: center;
+    border: thin solid #223243;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.35),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+th{
+    color:#c80139;
+    width: 150px;
+
+}
+tr,td{
+    border: thin solid #223243;
+    padding: 2px 0;
+}
