@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #34495E ;
+    background-color: #83878a ;
 }
 menu{
     width: 80%;
@@ -12,10 +12,11 @@ menu{
     margin: 0 auto;
 }
 tbody{
-    background-color: #314961;
+    background-color: #898b8d;
+    width: 80%;
     filter: drop-shadow(0 0 15px);
-    border-radius: 15px;
-    
+    border-radius: 15px; 
+    padding: 7px;
 }
 table{
     padding: 20px 0;
@@ -24,16 +25,29 @@ table{
     display: flex;
     border-radius: 25px;
     justify-content: center;
-    border: thin solid #223243;
+    border: thin solid #3b5169;
     box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.35),
-    inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+    inset -5px -5px 15px rgba(2, 2, 2, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+th#tl{
+    color: rgb(65, 21, 21);
 }
 th{
-    color:#c80139;
+    color:#642d3c;
     width: 150px;
+    width: 30rem;
 
 }
 tr,td{
-    border: thin solid #223243;
-    padding: 2px 0;
+    position: relative;
+    border: thin solid #213e5d;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+@media only screen and (max-width : 750px){
+    td[id="top"]{
+        font-size: 12px;
+        font-weight: bold;
+    }
 }
