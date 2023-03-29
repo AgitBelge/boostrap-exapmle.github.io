@@ -15,9 +15,6 @@ div.navbar{
     box-shadow: 0 0 50px;
     z-index: 9;
 }
-li.menu-icon{
-    display: none;
-}
 i{
     color: white;
     font-size: 50px;
@@ -109,7 +106,26 @@ a.pide-page{
     box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.35),
     inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
 }
+li.menu-icon{
+    display: none;
+}
 a.pide-page:hover{
     transition: .1s;   
     color: rgb(128, 90, 136);
+}
+i:hover{
+    color: rgb(124, 103, 103);
+}
+
+@media only screen and (max-width: 720px) {
+    li.menu-icon{
+        display: flex; 
+    }
+    div.navbar{
+        display:flex ;
+        justify-content: end;
+    }
+    ul.nav-ul{
+        display: none;
+    }
 }
