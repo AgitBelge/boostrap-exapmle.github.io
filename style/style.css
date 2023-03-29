@@ -15,6 +15,13 @@ div.navbar{
     box-shadow: 0 0 50px;
     z-index: 9;
 }
+li.menu-icon{
+    display: none;
+}
+i{
+    color: white;
+    font-size: 50px;
+}
 div.nav-menu{
     display: grid;
     align-items: center;

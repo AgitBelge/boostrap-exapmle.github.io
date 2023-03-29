@@ -38,6 +38,9 @@ th{
     width: 30rem;
 
 }
+td[id="top"]{
+    text-align: center;
+}
 tr,td{
     position: relative;
     border: thin solid #213e5d;
