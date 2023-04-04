@@ -117,11 +117,12 @@ h1.res-name{
     display: flex;
     align-items: center;
     padding-left: 20px;
-    color: #526808;
+    color: #0d0e0c;
+    font-size: bold;
 }
 h1.res-name:hover{
     text-shadow:0px 0 15px rgb(26, 204, 195);
-    cursor: none;
+    cursor: pointer;
 }
 i:hover{
     color: rgb(124, 103, 103);
@@ -144,3 +145,59 @@ i:hover{
         justify-content: space-between;
     }
 }
+  .container .header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+
+  }
+  
+  .hamburger-menu {
+    --heigth: 5px;
+    --animation-speed: 300ms;
+    --space: calc(var(--heigth) * 2.5);
+    width: calc(var(--space) * 4);
+    height: calc(var(--heigth) + var(--space) * 2);
+  }
+  .hamburger-menu span, .hamburger-menu span::before, .hamburger-menu span::after {
+    content: "";
+    display: block;
+    height: var(--heigth);
+    width: 100%;
+    background: #000000;
+  }
+  .hamburger-menu span {
+    transform: translateY(var(--space));
+    transition: var(--animation-speed) background-color;
+  }
+  .hamburger-menu span::after {
+    position: absolute;
+    top: var(--space);
+    transition: var(--animation-speed) transform, var(--animation-speed) var(--animation-speed) top;
+  }
+  .hamburger-menu span::before {
+    position: absolute;
+    transition: var(--animation-speed) transform, var(--animation-speed) var(--animation-speed) bottom;
+    bottom: var(--space);
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  #menu-toggle:checked ~ .container .hamburger-menu span {
+    background: transparent;
+  }
+  #menu-toggle:checked ~ .container .hamburger-menu span::before {
+    transform: rotate(-45deg);
+    bottom: 0;
+    transition: var(--animation-speed) var(--animation-speed) transform, var(--animation-speed) bottom;
+  }
+  #menu-toggle:checked ~ .container .hamburger-menu span::after {
+    transform: rotate(45deg);
+    transition: var(--animation-speed) var(--animation-speed) transform, var(--animation-speed) top;
+    top: 0;
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  
